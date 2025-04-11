@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai/"
+     xml:base="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:joey_human_ai="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#belongsToClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#belongsToClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Class"/>
+        <rdfs:comment>Associates characters with their respective classes, such as Wizard or Fighter.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#controls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#DungeonMaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#GameEntity"/>
+        <rdfs:comment>Indicates that the Dungeon Master has control over various game entities, including monsters and the game environment.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#encounters -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#encounters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#NonPlayerCharacter"/>
+        <rdfs:comment>Represents the interaction between player characters and non-player characters, such as monsters or villagers.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#hasChallengeRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#hasChallengeRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Monster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#ChallengeRating"/>
+        <rdfs:comment>Links monsters to their challenge ratings, indicating the difficulty level of the encounter.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Campaign"/>
+        <rdfs:comment>Links characters to the campaigns they are involved in.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Item"/>
+        <rdfs:comment>Connects characters to items they use, such as weapons, armor, or potions.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#campaignDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#campaignDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Campaign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Indicates the number of sessions or duration a campaign is expected to last.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#classAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#classAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Class"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Describes special abilities granted by a character&apos;s class, such as &quot;spellcasting&quot; for Wizards.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#hasAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#hasAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Describes specific abilities or skills a character has, such as &quot;magic&quot; or &quot;swordsmanship&quot;.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#hasMonsterAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#hasMonsterAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Monster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Describes specific abilities that monsters possess, such as &quot;fire breath&quot; or &quot;invisibility&quot;.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#itemCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#itemCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Represents the cost of an item in the game&apos;s currency.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#levelNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#levelNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Level"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Numeric representation of a character&apos;s or monster&apos;s level.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#AbilityScore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#AbilityScore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Stat"/>
+        <rdfs:comment>Core statistics that define a character&apos;s or monster&apos;s capabilities (e.g., Strength, Intelligence).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Armor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Armor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Item"/>
+        <rdfs:comment>Protective gear that reduces damage taken by characters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Campaign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Campaign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#GameEntity"/>
+        <rdfs:comment>A series of adventures or storylines that characters undertake.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#ChallengeRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#ChallengeRating">
+        <rdfs:comment>A metric used to indicate the difficulty level of a monster, helping Dungeon Masters balance encounters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#GameEntity"/>
+        <rdfs:comment>Represents player-controlled entities with various abilities and roles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#CharacterLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#CharacterLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Level"/>
+        <rdfs:comment>The level of a player character, indicating their progression and power.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Class">
+        <rdfs:comment>Represents the role or archetype a character can assume in the game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Dungeon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Dungeon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Environment"/>
+        <rdfs:comment>A challenging environment filled with monsters and traps.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#DungeonMaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#DungeonMaster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character"/>
+        <rdfs:comment>The facilitator of the game who controls the game environment and NPCs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#GameEntity"/>
+        <rdfs:comment>The setting or background where the game takes place.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Fighter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Fighter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Class"/>
+        <rdfs:comment>A class focused on physical combat and weaponry.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#GameEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#GameEntity">
+        <rdfs:comment>Represents all entities involved in the game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#GameEntity"/>
+        <rdfs:comment>Objects that can be used or interacted with by characters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Level">
+        <rdfs:comment>Represents the experience and advancement of characters and monsters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Monster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Monster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#NonPlayerCharacter"/>
+        <rdfs:comment>Hostile entities that players encounter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#MonsterLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#MonsterLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Level"/>
+        <rdfs:comment>Indicates the power level of a monster, often tied to its challenge rating.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#MythicalCreature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#MythicalCreature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Monster"/>
+        <rdfs:comment>Includes dragons and other legendary beings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#NonPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#NonPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#GameEntity"/>
+        <rdfs:comment>Characters in the game world not controlled by players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#PlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#PlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Character"/>
+        <rdfs:comment>Characters directly controlled by players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Potion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Potion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Item"/>
+        <rdfs:comment>Consumable items that can heal or provide other effects.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Shopkeeper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Shopkeeper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#NonPlayerCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Stat"/>
+        <rdfs:comment>Specific competencies that characters can improve over time (e.g., Stealth, Persuasion).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Stat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Stat">
+        <rdfs:comment>Represents numerical or qualitative attributes of characters and monsters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Town -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Town">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Environment"/>
+        <rdfs:comment>Safe areas where players can rest, resupply, and interact with NPCs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Undead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Undead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Monster"/>
+        <rdfs:comment>Includes zombies, skeletons, and ghosts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Villager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Villager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#NonPlayerCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Weapon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Weapon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Item"/>
+        <rdfs:comment>Items used by characters to increase their combat capabilities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Wizard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Wizard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Class"/>
+        <rdfs:comment>A class focused on magic and spellcasting.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#EvilWizard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#EvilWizard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#NonPlayerCharacter"/>
+        <joey_human_ai:controls rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Ghost"/>
+        <joey_human_ai:controls rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Skeleton"/>
+        <joey_human_ai:controls rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Zombie"/>
+        <rdfs:comment>A humanoid character, possibly a human or elf, who can control undead creatures.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Ghost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Ghost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Undead"/>
+        <rdfs:comment>A spectral undead entity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Shopkeeper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Shopkeeper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Shopkeeper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Skeleton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Skeleton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Undead"/>
+        <rdfs:comment>A skeletal undead creature, often encountered in fantasy settings.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Villager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Villager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Villager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Zombie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Zombie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Undead"/>
+        <joey_human_ai:hasMonsterAbility>eat brains</joey_human_ai:hasMonsterAbility>
+        <rdfs:comment>A typical undead creature that seeks to eat brains.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Shopkeeper">
+        <rdfs:comment>A typical non-player character who sells items to players.</rdfs:comment>
+        <rdfs:comment>NPCs that sell items to players.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey_human_ai#Villager">
+        <rdfs:comment>Non-hostile NPCs that players can interact with in towns.</rdfs:comment>
+        <rdfs:comment>Represents the typical inhabitants of a village in the game world.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

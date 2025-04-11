@@ -1,0 +1,794 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human/"
+     xml:base="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#TakesAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#TakesAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#ContainsDetailsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#ContainsDetailsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Sheet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Controls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dungeon_Master"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Non_Player_Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Setting"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#World"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#HasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#HasAttribute">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#IsAttributeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Statistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#IsAttributeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#IsAttributeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Statistics"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#IsRecordedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#IsRecordedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Statistics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Spell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Sheet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#PlaysPlayerCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#PlaysPlayerCharacter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#HasDurationInSessions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#HasDurationInSessions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Campaign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#HasExperiencePoints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#HasExperiencePoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#HasLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#HasLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#HasXPWorth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#HasXPWorth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#HasChallengeRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#HasChallengeRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Campaign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Campaign"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Character_Level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Character_Level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Elf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Elf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Humanoid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Friendly_NPC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Friendly_NPC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Non_Player_Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Ghost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Ghost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Undead"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Goal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Humanoid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Humanoid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Humanoid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Low_Magic_Setting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Low_Magic_Setting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Sci-Fi_Setting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Sci-Fi_Setting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Shop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Shop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Shopkeeper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Shopkeeper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Friendly_NPC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Skeleton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Skeleton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Undead"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Teahouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Teahouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Undead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Undead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Village -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Village">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Villager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Villager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Friendly_NPC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Zombie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Zombie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Undead"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Boardgame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Boardgame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Castle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Castle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Challenge_Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Challenge_Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Ability_Score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Ability_Score">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Background -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Background">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Modifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Modifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Race -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Race">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Sheet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Sheet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Statistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Statistics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Cleric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Cleric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Class"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Combat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Combat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Continuous_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Continuous_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dungeon_Master -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dungeon_Master">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dwarf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dwarf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Elf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Elf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Fantasy_Setting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Fantasy_Setting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Fantasy_World -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Fantasy_World">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#World"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Fighter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Fighter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Class"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Non_Player_Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster_Statistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster_Statistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Non_Player_Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Non_Player_Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Paladin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Paladin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Class"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character_Statistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Player_Character_Statistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Role_Playing_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Role_Playing_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Session_Duration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Session_Duration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Setting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Setting"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Sorcerer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Sorcerer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Class"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Spell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Spell"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Tabletop_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Tabletop_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Warlock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Warlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Class"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Wizard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Wizard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Class"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#World -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#World">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Buy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Buy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Defeat_Enemy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Defeat_Enemy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Dungeon_Master_Manual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Dungeon_Master_Manual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Ebberon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Ebberon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Fantasy_Setting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Evil_Wizard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Evil_Wizard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Humanoid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Fight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Fight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Have_Fun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Have_Fun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Take_Over_World -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Take_Over_World">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Talk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Talk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Write_Story -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Write_Story">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Charisma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Charisma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Ability_Score"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Constitution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Constitution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Ability_Score"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dexterity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dexterity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Ability_Score"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dragon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dragon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Ingelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Ingelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Ability_Score"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster_Manual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Monster_Manual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Players_Handbook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Players_Handbook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Strength -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Strength">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Ability_Score"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Wisdom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Wisdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Character_Ability_Score"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dungeons_&amp;_Dragons -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Dungeons_&amp;_Dragons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Role_Playing_Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/untitled-ontology-82#Tabletop_Game"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

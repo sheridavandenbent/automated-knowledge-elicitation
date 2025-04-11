@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai/"
+     xml:base="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ai-ai="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#controls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Dungeon_Master"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#GameElement"/>
+        <rdfs:comment>Indicates that the Dungeon Master controls various game elements like NPCs, Traps, and Weather.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#encounters -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#encounters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Creature"/>
+        <rdfs:comment>Describes the interaction of characters with creatures like monsters.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#experiences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#experiences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Weather"/>
+        <rdfs:comment>Describes how characters are affected by different weather conditions.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#manages -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#manages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Resource"/>
+        <rdfs:comment>Describes how characters manage resources crucial for their survival and progress.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#navigates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#navigates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Terrain"/>
+        <rdfs:comment>Connects characters to the terrain they move through during their adventures.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Quest"/>
+        <rdfs:comment>Connects characters to the quests they are involved in.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#performs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#performs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Action"/>
+        <rdfs:comment>Connects characters to the actions they perform, such as combat actions or travel actions.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#solves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#solves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Puzzle"/>
+        <rdfs:comment>Indicates that a character engages in solving puzzles or riddles.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Resource"/>
+        <rdfs:comment>Indicates that a character uses resources such as food, water, or ammunition.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#combatSkillLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#combatSkillLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatSkill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Quantifies the level of combat skills such as melee attacks, ranged attacks, and spellcasting.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#dialogueSkillLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#dialogueSkillLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#SocialSkill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Quantifies the level of dialogue skills like persuasion, deception, and intimidation.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#healthPoints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#healthPoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Indicates the current health points of a character, determining their status in combat and adventure scenarios.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#perceptionScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#perceptionScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#PerceptionCheck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Represents the score needed or achieved in a perception check.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#stealthScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#stealthScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#StealthCheck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Represents the score needed or achieved in a stealth check.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#travelPace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#travelPace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#TravelAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Specifies the speed at which characters move, measured in units per hour.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Action">
+        <rdfs:comment>Represents any action that characters can perform during gameplay.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Ammunition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Ammunition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Attack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Attack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CastSpell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CastSpell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character">
+        <rdfs:comment>Represents any individual participating in the game, either controlled by a player or the DM.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Check -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Check">
+        <rdfs:comment>Tests that characters must pass to succeed at various actions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Climb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Climb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#TravelAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Action"/>
+        <rdfs:comment>Actions specific to combat situations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Skill"/>
+        <rdfs:comment>Skills used in combat scenarios.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Creature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Creature">
+        <rdfs:comment>Any living being that characters might encounter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Dash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Dash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Deception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Deception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#SocialSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Desert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Desert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Disengage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Disengage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Dragon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Dragon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Dungeon_Master -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Dungeon_Master"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Environment">
+        <rdfs:comment>Encompasses all aspects of the game&apos;s setting.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Forest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Forest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#GameElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#GameElement">
+        <rdfs:comment>Fundamental components of gameplay.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Goblin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Goblin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Inspect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Inspect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#InteractionAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#InteractionAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#InteractionAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Action"/>
+        <rdfs:comment>Actions involving interaction with NPCs or the environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Intimidation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Intimidation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#SocialSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#MeleeAttack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#MeleeAttack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Monster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Monster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Creature"/>
+        <rdfs:comment>Hostile creatures that players may combat.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Mountain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Mountain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Negotiate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Negotiate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#InteractionAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#NonPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#NonPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:comment>Characters controlled by the Dungeon Master (DM) to enrich the game environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Orc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Orc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#PerceptionCheck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#PerceptionCheck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Check"/>
+        <rdfs:comment>Determines if characters notice hidden threats or important clues.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Persuasion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Persuasion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#SocialSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#PlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#PlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Character"/>
+        <rdfs:comment>Characters directly controlled by players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Puzzle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Puzzle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#GameElement"/>
+        <rdfs:comment>Intellectual challenges presented to players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Quest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Quest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#GameElement"/>
+        <rdfs:comment>Missions or objectives assigned to characters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Rain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Rain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#RangedAttack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#RangedAttack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#GameElement"/>
+        <rdfs:comment>Items necessary for character survival and progression.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Riddle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Riddle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Puzzle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Run -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Run">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#TravelAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Skill">
+        <rdfs:comment>Specific abilities that characters can use.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Snow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Snow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#SocialSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#SocialSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Skill"/>
+        <rdfs:comment>Skills used in interactions with NPCs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#SpellCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#SpellCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#CombatSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#StealthCheck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#StealthCheck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Check"/>
+        <rdfs:comment>Measures the ability of characters to move unseen.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Storm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Storm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Talk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Talk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#InteractionAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Terrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Terrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Environment"/>
+        <rdfs:comment>Different types of physical landscapes characters encounter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Trap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Trap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#GameElement"/>
+        <rdfs:comment>Physical or magical hazards designed to challenge players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#TravelAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#TravelAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Action"/>
+        <rdfs:comment>Actions related to movement and exploration.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Walk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Walk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#TravelAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Weather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Environment"/>
+        <rdfs:comment>Various weather conditions affecting gameplay.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#DragonMonster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#DragonMonster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Monster"/>
+        <ai-ai:healthPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</ai-ai:healthPoints>
+        <rdfs:comment>A powerful dragon that players might encounter, requiring strategic combat to overcome.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#EvilWizard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#EvilWizard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#NonPlayerCharacter"/>
+        <ai-ai:controls rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#UndeadZombie"/>
+        <ai-ai:healthPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</ai-ai:healthPoints>
+        <rdfs:comment>An evil wizard who can resurrect the undead, posing a significant challenge to players.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#ForestTerrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#ForestTerrain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Terrain"/>
+        <rdfs:comment>A forest environment where characters can navigate and encounter various challenges.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#MagicSword -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#MagicSword">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Resource"/>
+        <ai-ai:combatSkillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">+3</ai-ai:combatSkillLevel>
+        <rdfs:comment>A magical sword that can be used by characters to enhance their combat abilities.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#RainyWeather -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#RainyWeather">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Weather"/>
+        <rdfs:comment>A weather condition affecting gameplay, making navigation and combat more challenging.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#RescueQuest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#RescueQuest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Quest"/>
+        <rdfs:comment>A quest involving the rescue of a village from an impending threat, typically involving combat and negotiation.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#UndeadZombie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#UndeadZombie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/ai-ai#Monster"/>
+        <ai-ai:healthPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</ai-ai:healthPoints>
+        <rdfs:comment>A type of undead creature controlled by the EvilWizard, encountered by players.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

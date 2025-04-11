@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai/"
+     xml:base="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:comment>Used to signify ownership of items, particularly in cases where the item is wielded or used by the character.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#casts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#casts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#PlayerCharacter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell"/>
+        <rdfs:comment>Links characters to the spells they are capable of casting.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#controls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#DungeonMaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter"/>
+        <rdfs:comment>Represents the control the Dungeon Master has over NPCs, creatures, and game events.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#encounters -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#encounters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#HostileNPC"/>
+        <rdfs:comment>Displays interactions where characters come across creatures or antagonistic NPCs.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#locatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Location"/>
+        <rdfs:comment>Specifies the location of various entities within the game world.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#negotiatesWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#negotiatesWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter"/>
+        <rdfs:comment>Indicates interactions where characters negotiate rather than engage in combat.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Quest"/>
+        <rdfs:comment>vIndicates which characters are taking part in specific quests.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#possesses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#possesses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item"/>
+        <rdfs:comment>Relates characters to items they own or carry.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#abilityScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#abilityScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Metrics that measure specific abilities such as strength, intelligence, or charisma.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#constitutitionBonus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#constitutitionBonus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Bonus points that add to the character&apos;s health or stamina based on their constitution attribute.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#difficultyClass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#difficultyClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Quest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>A benchmark number that represents the difficulty level of quests or events.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#experiencePoints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#experiencePoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Accumulated experience points that contribute to a character’s level.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#hitPoints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#hitPoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Health points of characters or creatures, affecting their ability to sustain damage.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the experience level of a character.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#magicPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#magicPower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#MagicItem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Numeric value that quantifies the power or effectiveness of spells and magical items.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#AllyNPC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#AllyNPC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:comment>NPCs that assist or cooperate with the players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature"/>
+        <rdfs:comment>Non-mythical creatures that might be hunted or observed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Armor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Armor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item"/>
+        <rdfs:comment>Provides protection to characters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#AttackSpell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#AttackSpell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell"/>
+        <rdfs:comment>Spells used to inflict damage.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Bow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Bow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Weapon"/>
+        <rdfs:comment>A ranged weapon used for attacking from a distance.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Castle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Castle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Location"/>
+        <rdfs:comment>Fortified structures often associated with major NPCs or quests.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity"/>
+        <rdfs:comment>Represents personas controlled by players or the DM.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:comment>Includes all manner of beasts and mythical entities encountered in the game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#DefensiveSpell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#DefensiveSpell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell"/>
+        <rdfs:comment>Spells that provide protective effects.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Dungeon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Dungeon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Location"/>
+        <rdfs:comment>Typically underground areas filled with challenges and treasures.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#DungeonMaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#DungeonMaster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity"/>
+        <rdfs:comment>Game occurrences, including battles, negotiations, or plot advancements.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity">
+        <rdfs:comment>The base class for all entities within the game world.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Gather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Gather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Quest"/>
+        <rdfs:comment>Quests requiring collection of specific items.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Guardian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Guardian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter"/>
+        <rdfs:comment>NPCs who protect certain locations or items.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#HealingSpell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#HealingSpell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell"/>
+        <rdfs:comment>Spells used to restore health or remove ailments.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#HostileNPC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#HostileNPC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:comment>NPCs that generally challenge the players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Hunt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Hunt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Quest"/>
+        <rdfs:comment>Quests involving tracking and conquering a creature or an enemy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity"/>
+        <rdfs:comment>Objects found or used by characters within the game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity"/>
+        <rdfs:comment>Specific places within the game world.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#MagicItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#MagicItem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item"/>
+        <rdfs:comment>Items with enchanted properties.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Monster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Monster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature"/>
+        <rdfs:comment>Aggressive entities often acting as adversaries in quests.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#MythicBeast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#MythicBeast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Creature"/>
+        <rdfs:comment>Legendary creatures often integral to major quests or myths.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:comment>Characters controlled by the Dungeon Master.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#PlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#PlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Character"/>
+        <rdfs:comment>Characters directly controlled by the human players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Potion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Potion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item"/>
+        <rdfs:comment>Consumed for healing or gaining temporary abilities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Quest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Quest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity"/>
+        <rdfs:comment>Tasks or adventures undertaken by characters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#QuestGiver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#QuestGiver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter"/>
+        <rdfs:comment>NPCs who provide quests to players.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#RescueMission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#RescueMission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Quest"/>
+        <rdfs:comment>Quests centered around saving a character or defeating a captor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#GameEntity"/>
+        <rdfs:comment>Magical abilities that can be utilized by characters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Sword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Sword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Weapon"/>
+        <rdfs:comment>A basic type of weapon common in fantasy settings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Town -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Town">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Location"/>
+        <rdfs:comment>Centers of commerce and interaction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Treasure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Treasure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item"/>
+        <rdfs:comment>Valuable items sought for their worth or power.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#UtilitySpell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#UtilitySpell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell"/>
+        <rdfs:comment>Spells with various non-combat applications.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Vendor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Vendor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter"/>
+        <rdfs:comment>NPCs who sell items or information.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Villain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Villain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#NonPlayerCharacter"/>
+        <rdfs:comment>The primary antagonists of a quest or storyline.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Weapon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Weapon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Item"/>
+        <rdfs:comment>Used for combat by characters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Wilderness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Wilderness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Location"/>
+        <rdfs:comment>Unsettled natural areas that present various dangers and opportunities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#BanditNPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#BanditNPC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#HostileNPC"/>
+        <rdfs:comment>A non-player character that acts as an antagonist, typically encountered along roads or in dungeons.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#DungeonCityRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#DungeonCityRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Location"/>
+        <rdfs:comment>A notorious location known for bandit encounters, part of the game world&apos;s roadmap.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#MagicSword -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#MagicSword">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#MagicItem"/>
+        <rdfs:comment>A mythical weapon imbued with special powers that enhance combat abilities.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#RescueThePrincessQuest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#RescueThePrincessQuest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#RescueMission"/>
+        <rdfs:comment>A quest involving the rescue of a significant character from a dangerous situation, typical of fantasy role-playing scenarios.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#TidalWave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#TidalWave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-ai#Spell"/>
+        <rdfs:comment>A powerful spell capable of creating a large wave, used potentially in combat or for manipulating the environment.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,926 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human/"
+     xml:base="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#AddsToDiceroll -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#AddsToDiceroll">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityModifiers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Diceroll"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CanBeCastByClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CanBeCastByClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Spell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CanCastSpell -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CanCastSpell">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ContainsCharacterSpell -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ContainsCharacterSpell">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Charactersheet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Spell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ContainsCharacterdetails -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ContainsCharacterdetails">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Charactersheet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterDetails"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ControlsMonster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ControlsMonster">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ControlsNonPlayerCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ControlsNonPlayerCharacter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#NonPlayerCharacter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ControlsWorld -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ControlsWorld">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#World"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CreatesCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CreatesCharacter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DescribesResultOfDecision -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DescribesResultOfDecision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Decision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DescribesSituation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DescribesSituation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#FightsMonster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#FightsMonster">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasGameItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasGameItem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#IsCharacterInSituation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#IsCharacterInSituation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#IsCharacterInWorld -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#IsCharacterInWorld">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#World"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#IsPartOfGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#IsPartOfGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PlaysCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PlaysCharacter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PlayerCharacter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TakesAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TakesAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TakesDecision -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TakesDecision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Decision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasChallengeRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasChallengeRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasGroupSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasGroupSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameGroup"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasLengthInSessions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasLengthInSessions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Adventure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasSessionLengthInHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasSessionLengthInHours">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameSession"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasXPValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#HasXPValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#IsLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#IsLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#SpellDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#SpellDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Spell"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Adventure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Adventure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#BoardGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#BoardGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#RealWorldItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Castle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Castle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityModifiers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityModifiers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterDetails"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityScores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityScores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterDetails"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterBackground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterBackground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterDetails"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterDetails"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterDetails -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterDetails"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterGoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterGoal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterRace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterRace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterDetails"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Charactersheet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Charactersheet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ContinuousGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ContinuousGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Decision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Decision"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Diceroll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Diceroll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PlayerAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Die -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Die">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#RealWorldItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DigitalCharactersheet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DigitalCharactersheet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Charactersheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#DungeonMaster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#LevelUpMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#FantasySetting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#FantasySetting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Fantasy_World -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Fantasy_World">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#World"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameGoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameGoal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameItem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameSession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameSession"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Goal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#LevelUpMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#LevelUpMethod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Magic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Magic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Milestone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Milestone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#LevelUpMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#MonsterChallengeRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#MonsterChallengeRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#MonsterDetails"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#MonsterDetails -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#MonsterDetails"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#MonsterStatBlock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#MonsterStatBlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#MonsterDetails"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#NonPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#NonPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PaperCharactersheet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PaperCharactersheet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Charactersheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PlayerAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PlayerAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#PlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#RealWorldItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#RealWorldItem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#RolePlayingGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#RolePlayingGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#SciFiSetting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#SciFiSetting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Setting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Setting"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Shop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Shop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Shopkeeper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Shopkeeper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Villager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Situation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Spell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Spell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Magic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TabletopGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TabletopGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TeaHouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TeaHouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Village -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Village">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Villager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Villager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#NonPlayerCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#World -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#World">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Charisma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Charisma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityScores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Cleric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Cleric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Constitution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Constitution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityScores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dexterity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dexterity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityScores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dragon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dragon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dungeon_Master_Manual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dungeon_Master_Manual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dwarf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dwarf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterRace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Elf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Elf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterRace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Fight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Fight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Fighter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Fighter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Human -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Human">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterRace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityScores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster_Manual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Monster_Manual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Paladin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Paladin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Players_Handbook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Players_Handbook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Book"/>
+        <rdfs:comment>The book that explains all the rules for players.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Sorcerer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Sorcerer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Strength -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Strength">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityScores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Warlock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Warlock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Wisdom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Wisdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterAbilityScores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Wizard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Wizard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#CharacterClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#WriteStory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#WriteStory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#GameGoal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#d20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#d20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Die"/>
+        <rdfs:comment>20-sided die</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#d20_roll -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#d20_roll">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Diceroll"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dungeons_&amp;_Dragons -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Dungeons_&amp;_Dragons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#ContinuousGame"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#RolePlayingGame"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/5/joey-ai-human#TabletopGame"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

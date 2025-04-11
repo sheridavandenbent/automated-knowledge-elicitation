@@ -1,0 +1,1061 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human/"
+     xml:base="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:boris-human-human="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#CanCast -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#CanCast">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Spell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#ChoosesGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#ChoosesGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dungeon_Master"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Controls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dungeon_Master"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fantasy_World"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#ControlsCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#ControlsCharacter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dungeon_Master"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#DoesNotHaveGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#DoesNotHaveGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasCharacteristic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Plays -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Plays">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasDifficultyClass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasDifficultyClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasValueInCopper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasValueInCopper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasValueInGold -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasValueInGold">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasValueInSilver -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#HasValueInSilver">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Abilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Abilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Background -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Background">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Bandit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Bandit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#NonPlayerCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Cooperative_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Cooperative_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Creature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Creature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dice_Roll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dice_Roll"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dungeon_Master -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dungeon_Master">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game_Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Enemy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Enemy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Familymembers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Familymembers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fantastical_Creature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fantastical_Creature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fantasy_World -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fantasy_World">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#World"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game_Mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game_Mode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game_Participants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game_Participants"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#God -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#God">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magic_Effect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magic_Effect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magical_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magical_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Merchant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Merchant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#NonPlayerCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Monster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Monster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#NonPlayerCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Mythological_Creature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Mythological_Creature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#NonPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#NonPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Personality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Personality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game_Participants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#PlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#PlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Proficiencies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Proficiencies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Race -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Race">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Roleplaying_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Roleplaying_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Sea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Sea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Setting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Setting"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Spell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Spell"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Store">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Tabletop_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Tabletop_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Task"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Underground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Underground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Underwater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Underwater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Village -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Village">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Wild_Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Wild_Animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#NonPlayerCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Wilderness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Wilderness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#World -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#World"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Attack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Attack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dice_Roll"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Buy_Item -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Buy_Item">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Cast_Spell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Cast_Spell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Centaur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Centaur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Mythological_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Charisma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Charisma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Abilities"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Check -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Check">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dice_Roll"/>
+        <rdfs:comment>Determines whether an action succeeds or not</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Chess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Chess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Conquer_Item -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Conquer_Item">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Constitution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Constitution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Abilities"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Convince_Someone_To_Take_An_Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Convince_Someone_To_Take_An_Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Copperpiece -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Copperpiece">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Cutlery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Cutlery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Decrease_Ability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Decrease_Ability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magic_Effect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Defeat_Enemy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Defeat_Enemy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Destroy_Something -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Destroy_Something">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dexterity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dexterity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Abilities"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dragon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dragon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fantastical_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dungeons_and_Dragons -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dungeons_and_Dragons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Cooperative_Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Roleplaying_Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Tabletop_Game"/>
+        <boris-human-human:DoesNotHaveGoal rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#To_Win"/>
+        <boris-human-human:HasGoal rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Have_Fun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dwarf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dwarf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Elf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Elf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fantastical_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Experiencepoints -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Experiencepoints">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fell_A_Tree -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fell_A_Tree">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fight_Enemy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fight_Enemy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fighter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fighter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Find_Item -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Find_Item">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Gandalf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Gandalf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Get_Revenge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Get_Revenge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Get_Rich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Get_Rich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goldpiece -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goldpiece">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+        <boris-human-human:HasValueInSilver rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</boris-human-human:HasValueInSilver>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Greek_Mythology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Greek_Mythology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Setting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Halfling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Halfling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Hand_Item -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Hand_Item">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Have_Fun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Have_Fun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Hitpoints -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Hitpoints">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Character_Characteristics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Human -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Human">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Increase_Ability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Increase_Ability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magic_Effect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Initiative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Initiative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dice_Roll"/>
+        <rdfs:comment>Determines the order in which the characters take their turns during a fight</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Abilities"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Invisibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Invisibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magic_Effect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Jump_A_Distance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Jump_A_Distance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Jump_Off_A_Mountain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Jump_Off_A_Mountain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Jump_Ravine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Jump_Ravine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Kill_Someone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Kill_Someone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magician -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Medieval_Fantasy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Medieval_Fantasy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Setting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Merchant_Ship -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Merchant_Ship">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Plate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Plate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Players_Handbook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Players_Handbook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Rogue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Rogue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Satyr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Satyr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Mythological_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Save_Something -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Save_Something">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Save_The_World -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Save_The_World">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Saving_Throw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Saving_Throw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Dice_Roll"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Seduce_Someone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Seduce_Someone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Shapeshift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Shapeshift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Magic_Effect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Silverpiece -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Silverpiece">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+        <boris-human-human:HasValueInCopper rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</boris-human-human:HasValueInCopper>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Stab_Someone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Stab_Someone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Strength -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Strength">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Abilities"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Swim_Across_Something -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Swim_Across_Something">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Sword -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Sword">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Tidal_Wave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Tidal_Wave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Spell"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#To_Win -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#To_Win">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Troll -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Troll">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Fantastical_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Turn_Based -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Turn_Based">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Game_Mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Wizard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Wizard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sherida/ontologies/2024/4/boris-human-human#Class"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
