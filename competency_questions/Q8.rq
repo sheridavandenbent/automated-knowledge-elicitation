@@ -1,0 +1,8 @@
+# Q8: What is the damage of a Shortbow?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?damage
+WHERE {
+  dnd:Shortbow dnd:HasDamage ?damage .
+}

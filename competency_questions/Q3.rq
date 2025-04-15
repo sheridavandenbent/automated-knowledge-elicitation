@@ -1,0 +1,8 @@
+# Q3: What is the casting time of “Chill Touch”?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?castingTime
+WHERE {
+  dnd:Chill_Touch dnd:HasCastingTime ?castingTime .
+}

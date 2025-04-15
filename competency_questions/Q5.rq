@@ -1,0 +1,9 @@
+# Q5: Which spells require material components?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?spell
+WHERE {
+  ?spell dnd:HasSpellComponents ?components .
+  FILTER regex(str(?components), "M", "i")
+}

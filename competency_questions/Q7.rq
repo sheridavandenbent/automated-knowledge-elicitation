@@ -1,0 +1,8 @@
+# Q7: What are the Flaws associated with the Folk Hero background?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?flaw
+WHERE {
+  ?flaw dnd:IsFlawOf dnd:Folk_Hero .
+}

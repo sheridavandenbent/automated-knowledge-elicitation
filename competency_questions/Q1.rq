@@ -1,0 +1,8 @@
+# Q1: Which class features belong to a Bard?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?feature
+WHERE {
+  ?feature dnd:IsClassFeatureOf dnd:Bard .
+}

@@ -1,0 +1,8 @@
+# Q6: What are the Ideals associated with the Charlatan background?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?ideal
+WHERE {
+  ?ideal dnd:IsIdealOf dnd:Charlatan .
+}

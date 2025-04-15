@@ -1,0 +1,8 @@
+# Q2: What proficiencies does a Fighter have?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?proficiency
+WHERE {
+  dnd:Fighter dnd:HasProficiencyWith ?proficiency .
+}

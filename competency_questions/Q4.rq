@@ -1,0 +1,8 @@
+# Q4: Which spells have a spell range of “Touch”?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?spell
+WHERE {
+  ?spell dnd:HasSpellRange "Touch" .
+}

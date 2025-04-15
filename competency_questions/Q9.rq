@@ -1,0 +1,8 @@
+# Q9: What starting equipment does a Wizard begin with?
+
+PREFIX dnd: <http://www.semanticweb.org/sherida/ontologies/2023/6/DnD_basetruth#>
+
+SELECT ?item
+WHERE {
+  dnd:Wizard dnd:HasStartingEquipment ?item .
+}
